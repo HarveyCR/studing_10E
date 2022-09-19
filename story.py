@@ -34,7 +34,7 @@ def big_home():
     print("Облазив весь дом вы нашли только странный пирожок")
     rez = input("a - Съесть\nb - Пойти в другой дом\n")
     if "a" in rez:
-        big_home()
+        new_country()
     else:
         small_home()
 
