@@ -16,6 +16,7 @@ def main():
               f"{i}%",
               end="")
         sleep(0.25)
+    print()
     print("安东*鲍里索维奇，我花了几个小时在这个愚蠢的任务上，你有很多钱")
 
 if __name__ == '__main__':
