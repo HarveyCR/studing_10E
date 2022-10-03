@@ -1,3 +1,7 @@
+import heroes
+import enemies
+
+
 class Player:
     def __init__(self):
         self.name = "Main_Hero"
@@ -23,13 +27,20 @@ class Treasure:
 
 
 def main():
-    dante = Player()
-    virgil = Player()
-    dante.name = "Данте"
-    virgil.name = "Вергилий"
-    dante.weapon = "soparda_sword"
-    virgil.weapon = "yamato"
-    print(dante.name, virgil.name)
+    print("Главные герои")
+    dante, virgil, nero = heroes.heroes()
+    print(f"    * Имя - {dante.name} | Возраст - {dante.age} | Оружие - {dante.weapon}")
+    print(f"    * Имя - {virgil.name} | Возраст - {virgil.age} | Оружие - {virgil.weapon}")
+    print(f"    * Имя - {nero.name} | Возраст - {nero.age} | Оружие - {nero.weapon}")
+
+    print("Враги")
+    empuza, empuzes_queen, fury, Proto_Angelo = enemies.enemies()
+    print(f"    * Имя - {empuza.name}| класс - {empuza.guild} | Возраст - {empuza.age} | Оружие - {empuza.weapon}")
+    print(
+        f"    * Имя - {empuzes_queen.name}| класс - {empuzes_queen.guild} | Возраст - {empuzes_queen.age} | Оружие - {empuzes_queen.weapon}")
+    print(f"    * Имя - {fury.name}| класс - {fury.guild} | Возраст - {fury.age} | Оружие - {fury.weapon}")
+    print(
+        f"    * Имя - {Proto_Angelo.name}| класс - {Proto_Angelo.guild} | Возраст - {Proto_Angelo.age} | Оружие - {Proto_Angelo.weapon}")
 
 
 if __name__ == '__main__':
