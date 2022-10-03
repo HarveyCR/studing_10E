@@ -16,7 +16,8 @@ class Enemy:
 
 class Treasure:
     def __init__(self):
-        self.count = 500
+        self.count = "500"
+        self.value = "rare"
 
 
 def main():
