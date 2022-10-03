@@ -10,7 +10,7 @@ def treasure():
     golden_spheres.kind = "Золотые сферы"
     purple_spheres.kind = "Фиолетовые сферы"
     blue_spheres.kind = "Синие сферы"
-    blood_coins.ability = "Отсутствуеты"
+    blood_coins.ability = "Отсутствует"
     golden_spheres.ability = "Воскрешение"
     purple_spheres.ability = "Увеличение полоски демона"
     blue_spheres.ability = "Увеличение ХП"
