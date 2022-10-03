@@ -1,5 +1,6 @@
 import heroes
 import enemies
+import treasure
 
 
 class Player:
@@ -22,8 +23,8 @@ class Enemy:
 
 class Treasure:
     def __init__(self):
-        self.count = "500"
-        self.value = "rare"
+        self.kind = "blood_coins"
+        self.ability = "nothing"
 
 
 def main():
@@ -41,6 +42,16 @@ def main():
     print(f"    * Имя - {fury.name}| класс - {fury.guild} | Возраст - {fury.age} | Оружие - {fury.weapon}")
     print(
         f"    * Имя - {Proto_Angelo.name}| класс - {Proto_Angelo.guild} | Возраст - {Proto_Angelo.age} | Оружие - {Proto_Angelo.weapon}")
+
+    print("Награды")
+    blood_coins, golden_spheres, purple_spheres, blue_spheres = treasure.treasure()
+    print(f"    * Название - {blood_coins.kind}| способность - {blood_coins.ability}")
+    print(
+        f"    * Название - {golden_spheres.kind}| способность - {golden_spheres.ability}")
+    print(
+        f"    * Название - {purple_spheres.kind}| способность - {purple_spheres.ability} ")
+    print(
+        f"    * Название - {blue_spheres.kind}| способность - {blue_spheres.ability} ")
 
 
 if __name__ == '__main__':
