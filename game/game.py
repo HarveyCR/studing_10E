@@ -8,7 +8,7 @@ class Player:
         self.name = "Main_Hero"
         self.age = "21"
         self.guild = "assassin"
-        self.existence = "30"
+        self.existence = "10"
         self.weapon = "sword"
 
 
@@ -30,9 +30,12 @@ class Treasure:
 def main():
     print("Главные герои")
     dante, virgil, nero = heroes.heroes()
-    print(f"    * Имя - {dante.name} | Возраст - {dante.age} | Оружие - {dante.weapon}")
-    print(f"    * Имя - {virgil.name} | Возраст - {virgil.age} | Оружие - {virgil.weapon}")
-    print(f"    * Имя - {nero.name} | Возраст - {nero.age} | Оружие - {nero.weapon}")
+    print(
+        f"    * Имя - {dante.name} | Возраст - {dante.age} | Оружие - {dante.weapon}| Происхождение - {dante.guild}| Количество ХП - {dante.existence}")
+    print(
+        f"    * Имя - {virgil.name} | Возраст - {virgil.age} | Оружие - {virgil.weapon}| Происхождение - {virgil.guild}| Количество ХП - {virgil.existence}")
+    print(
+        f"    * Имя - {nero.name} | Возраст - {nero.age} | Оружие - {nero.weapon}| Происхождение - {nero.guild}| Количество ХП - {nero.existence}")
 
     print("Враги")
     empuza, empuzes_queen, fury, Proto_Angelo = enemies.enemies()

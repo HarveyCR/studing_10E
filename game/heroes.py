@@ -14,4 +14,7 @@ def heroes():
     dante.age = "44"
     virgil.age = "44"
     nero.age = "21"
+    dante.guild = "demon"
+    virgil.guild = "demon"
+    nero.guild = "half-demon"
     return dante, virgil, nero
